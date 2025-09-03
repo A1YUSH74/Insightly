@@ -1,0 +1,1 @@
+Insightly is an all-in-one personal productivity and wellness dashboard that blends fitness, habit tracking, and productivity tools into one platform. It helps users stay organized, motivated, and on track with their health and personal goals.
