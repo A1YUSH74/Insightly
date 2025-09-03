@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Insightly</title>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contactus.css">
+</head>
+
+<body>
+     <header id="header">
+        <div class="container">
+            <div class="navbar" style="display: flex; align-items: center; justify-content: space-between;">
+                <a href="index.html" class="logo" style="display: flex; align-items: center; height: 56px;">
+                    <img src="image/insightblacknew.png" alt="Insightly Logo" class="logo-img" style="height: 100px; width: 200px; display: block; align-self: center;">
+                </a>
+                <ul class="nav-links" style="display: flex; align-items: center;">
+                   <li><a href="index.html" class="nav-link">HOME </a></li>
+                    <li><a href="resources" class="nav-link">RESOURCES </a></li>
+                    <li><a href="price.html" class="nav-link">PRICING</a></li>
+                    <li><a href="login.html" class="nav-link">LOGIN</a></li>
+                    <li><a href="fitnesspage.html" class="btn btn-primary nav-cta">GET STARTED</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you! Fill out the form below or reach out to us directly.</p>
+
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="alert('Thank you for you message will shortly reply')">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Insightly St, Suite 100, City, Country</p>
+                    <p><i class="fas fa-phone"></i> +1 (234) 567-8901</p>
+                    <p><i class="fas fa-envelope"></i> support@insightly.com</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <h3>Our Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509198!2d144.9537353153164!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f0b0b5b%3A0x5045675218ceed0!2sInsightly!5e0!3m2!1sen!2sau!4v1616161616161!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo">Insightly</div>
+                    <p class="footer-text">The productivity platform designed for both performance and peace of mind.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="aboutus.html">Features</a></li>
+                        <li class="footer-link"><a href="price.html">Pricing</a></li>
+                        <li class="footer-link"><a href="contactus.html">Support</a></li>
+                        <li class="footer-link"><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">© 2025 Insightly. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

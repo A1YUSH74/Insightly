@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Page - Insightly</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="fitnesspage.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html" class="logo" style="display: flex; align-items: center; height: 56px;">
+                    <!-- ✅ Added id -->
+                    <img id="logo" src="image/insightblacknew.png" alt="Insightly Logo" class="logo-img"
+                        style="height: 80px; width: 200px; display: block; align-self: center;">
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="madefor.html" class="nav-link">MADE FOR</a></li>
+                    <li><a href="resources.html" class="nav-link">RESOURCES </a></li>
+                    <li><a href="price.html" class="nav-link">PRICING</a></li>
+                    <li><a href="login.html" class="nav-link">LOGIN</a></li>
+                    <li><a href="contactus.html " class="btn btn-primary">CONTACT US</a></li>
+                    <li><button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="container text-center">
+            <div class="hero-content">
+                <h1 class="hero-title">BEYOND EPIC. BEYOND LIMITS. MASSIVE VOLUME, MASSIVE VICTORIES.</h1>
+                <p class="hero-text">PLAN WORKOUTS, TRACK PROGRESS, BUILD HABITS, AND CONQUER CHALLENGES.</p>
+                <div class="hero-buttons">
+                    <a href="#tracker" class="btn btn-primary">Let's Start</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="tracker" class="app-container">
+        <header class="text-center py-8">
+            <h2 class="heading-gradient">Advanced Fitness Tracker</h2>
+            <p class="description">Track your progress and build healthier habits with these comprehensive tools.</p>
+        </header>
+
+        <div class="grid-layout">
+            <div class="grid-column">
+                <section class="card">
+                    <h3 class="heading-section">Select Date</h3>
+                    <div class="form-group">
+                        <label for="date-input">Date</label>
+                        <input type="date" id="date-input" />
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h3 class="heading-section">BMI & Basic Info</h3>
+                    <p class="description" style="text-align:left">Enter your height and weight to calculate your Body
+                        Mass Index.</p>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex-1 form-group">
+                            <label for="height">Height (cm)</label>
+                            <input type="number" id="height" min="50" max="300" placeholder="e.g. 170" />
+                        </div>
+                        <div class="flex-1 form-group">
+                            <label for="weight">Weight (kg)</label>
+                            <input type="number" id="weight" min="10" max="500" placeholder="e.g. 70" />
+                        </div>
+                    </div>
+                    <div class="text-center font-bold text-lg mt-4" id="bmi-result" aria-live="polite">BMI: -</div>
+                </section>
+
+                <section class="card workout-planner image-background-container">
+                    <h3 class="heading-section">Workout Planner</h3>
+                    <p class="description" style="text-align:left">Log your workouts and track your performance over
+                        time.</p>
+                    <div class="form-group">
+                        <label for="exercise-name">Exercise Name</label>
+                        <input list="exercise-list" type="text" id="exercise-name"
+                            placeholder="Start typing exercise name..." autocomplete="off" />
+                        <datalist id="exercise-list"></datalist>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex-1 form-group">
+                            <label for="workout-sets">Number of Sets</label>
+                            <input type="number" id="workout-sets" min="0" max="20" placeholder="e.g. 3" />
+                        </div>
+                        <div class="flex-1 form-group">
+                            <label for="workout-reps">Reps per Set</label>
+                            <input type="number" id="workout-reps" min="0" max="100" placeholder="e.g. 12" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card nutrition-planner image-background-container">
+                    <h3 class="heading-section">Nutrition Planner</h3>
+                    <p class="description" style="text-align:left">Track your daily caloric intake and macronutrients.
+                    </p>
+                    <div class="form-group">
+                        <label for="calories">Calories Consumed</label>
+                        <input type="number" id="calories" min="0" max="10000" placeholder="e.g. 2200" />
+                    </div>
+                    <div class="form-group">
+                        <label for="protein">Protein (g)</label>
+                        <input type="number" id="protein" min="0" max="1000" placeholder="e.g. 150" />
+                    </div>
+                    <div class="form-group">
+                        <label for="carbs">Carbs (g)</label>
+                        <input type="number" id="carbs" min="0" max="1000" placeholder="e.g. 250" />
+                    </div>
+                    <div class="form-group">
+                        <label for="fat">Fat (g)</label>
+                        <input type="number" id="fat" min="0" max="500" placeholder="e.g. 70" />
+                    </div>
+                </section>
+            </div>
+
+            <div class="grid-column">
+                <section class="card progress-tracker image-background-container">
+                    <h3 class="heading-section">Progress Tracker</h3>
+                    <p class="description" style="text-align:left">Log your running and lifting progress.</p>
+                    <div class="form-group">
+                        <label for="progress-running">Running Distance (km)</label>
+                        <input type="number" id="progress-running" min="0" max="1000" step="0.1"
+                            placeholder="e.g. 5.2" />
+                    </div>
+                    <div class="form-group">
+                        <label for="progress-lifted">Weight Lifted (kg)</label>
+                        <input type="number" id="progress-lifted" min="0" max="10000" placeholder="e.g. 150" />
+                    </div>
+                </section>
+
+                <section class="card habit-formation image-background-container">
+                    <h3 class="heading-section">Habit Formation Tools</h3>
+                    <p class="description" style="text-align:left">Build sustainable habits with reminders and streaks.
+                    </p>
+                    <div class="form-group">
+                        <label for="habit-name">New Habit (choose or type)</label>
+                        <input list="habit-list" id="habit-name" placeholder="e.g. Reading" />
+                        <datalist id="habit-list">
+                            <option value="Reading"></option>
+                            <option value="Meditation"></option>
+                            <option value="Hydration"></option>
+                            <option value="Early Wake-up"></option>
+                            <option value="Journaling"></option>
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <label for="habit-done">Did you do it today?</label>
+                        <select id="habit-done">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div id="habit-streak-display" class="font-semibold text-sm mt-2" style="color:#c7d2fe"></div>
+                </section>
+
+                <section class="card sleep-tracker image-background-container">
+                    <h3 class="heading-section">Sleep & Mood Tracker</h3>
+                    <p class="description" style="text-align:left">Log and analyze your sleep patterns and daily mood.
+                    </p>
+                    <div class="form-group">
+                        <label for="sleep-hours">Hours Slept</label>
+                        <input type="number" id="sleep-hours" min="0" max="24" step="0.1" placeholder="e.g. 7.5" />
+                    </div>
+                    <div class="form-group">
+                        <label for="sleep-quality">Sleep Quality (1-10)</label>
+                        <input type="number" id="sleep-quality" min="1" max="10" placeholder="e.g. 8" />
+                    </div>
+                    <label class="mt-2 mb-1 block">How are you feeling today?</label>
+                    <div class="mood-container">
+                        <span class="mood-emoji" data-mood="excited" role="button" aria-label="Excited">😄</span>
+                        <span class="mood-emoji" data-mood="happy" role="button" aria-label="Happy">😊</span>
+                        <span class="mood-emoji" data-mood="neutral" role="button" aria-label="Neutral">😐</span>
+                        <span class="mood-emoji" data-mood="tired" role="button" aria-label="Tired">😴</span>
+                        <span class="mood-emoji" data-mood="stressed" role="button" aria-label="Stressed">😫</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <a id="save-all-btn" class="btn btn-primary btn-primary-wide">Save All Data</a>
+    </main>
+    <!-- Unique Section: Motivational Banner -->
+    <section
+        class="motivational-banner w-full py-8 bg-gradient-to-r from-indigo-500 via-emerald-400 to-indigo-600 text-white text-center rounded-2xl shadow-lg mb-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-extrabold mb-2 tracking-tight" style="font-family: 'Montserrat', sans-serif;">
+                Unleash Your Potential!
+            </h2>
+            <p class="text-lg font-medium mb-4">
+                Every rep, every step, every habit counts. Track your journey and celebrate your victories!
+            </p>
+            <div class="flex justify-center gap-4 mt-4 flex-wrap">
+                <span
+                    class="inline-flex items-center px-4 py-2 bg-white bg-opacity-20 rounded-full font-semibold text-base shadow">
+                    <i class="fas fa-dumbbell mr-2"></i> Stronger Every Day
+                </span>
+                <span
+                    class="inline-flex items-center px-4 py-2 bg-white bg-opacity-20 rounded-full font-semibold text-base shadow">
+                    <i class="fas fa-seedling mr-2"></i> Healthier Habits
+                </span>
+                <span
+                    class="inline-flex items-center px-4 py-2 bg-white bg-opacity-20 rounded-full font-semibold text-base shadow">
+                    <i class="fas fa-trophy mr-2"></i> Track Your Wins
+                </span>
+            </div>
+        </div>
+    </section>
+
+   <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo">INSIGHTLY</div>
+                    <p class="footer-text">The productivity platform designed for both performance and peace of mind.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Product</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="aboutus.html">Features</a></li>
+                        <li class="footer-link"><a href="price.html">Pricing</a></li>
+                        <li class="footer-link"><a href="aboutus.html">Integrations</a></li>
+                        <li class="footer-link"><a href="aboutus.html">Updates</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="resources.html">Blog</a></li>
+                        <li class="footer-link"><a href="resources.html">Guides</a></li>
+                        <li class="footer-link"><a href="resources.html">Webinars</a></li>
+                        <li class="footer-link"><a href="resources.html">API Docs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="aboutus.html">About</a></li>
+                        <li class="footer-link"><a href="aboutus.html">Careers</a></li>
+                        <li class="footer-link"><a href="aboutus.html">Press</a></li>
+                        <li class="footer-link"><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Legal</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">Privacy</a></li>
+                        <li class="footer-link"><a href="#">Terms</a></li>
+                        <li class="footer-link"><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">© 2025 Insightly. All rights reserved.</div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+        const logo = document.getElementById('logo');
+
+        // saved preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+            themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+            if (logo) logo.src = 'image/insightwhite.png'; // ✅ white logo in dark
+        } else {
+            body.classList.remove('dark-mode');
+            themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+            if (logo) logo.src = 'image/insightblacknew.png'; // ✅ black logo in light
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            themeToggleBtn.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+
+            if (logo) {
+                logo.src = isDarkMode ? 'image/insightwhite.png' : 'image/insightblacknew.png';
+            }
+        });
+
+
+        // ------- Data binding -------
+        function updateBMIDisplay() {
+            const h = parseFloat(document.getElementById('height')?.value);
+            const w = parseFloat(document.getElementById('weight')?.value);
+            const out = document.getElementById('bmi-result');
+            if (!out) return;
+            if (h > 0 && w > 0) {
+                const bmi = (w / ((h / 100) ** 2)).toFixed(1);
+                out.textContent = `BMI: ${bmi}`;
+            } else {
+                out.textContent = 'BMI: -';
+            }
+        }
+
+        // Since localStorage is removed, these functions are now placeholders
+        function updateHabitStreak() {
+            const streakDisplay = document.getElementById('habit-streak-display');
+            if (streakDisplay) {
+                streakDisplay.textContent = 'This is a protoype pura hua nhi abhi !!';
+            }
+        }
+
+        function loadDateData() { }
+        function saveAllData(evt) {
+            evt?.preventDefault?.();
+            alert('This is a protoype pura hua nhi abhi !!');
+        }
+
+        // ------- Setup & Events -------
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateEl = document.getElementById('date-input');
+            if (dateEl && !dateEl.value) dateEl.value = new Date().toISOString().split('T')[0];
+
+            const exercises = ['Squats', 'Bench Press', 'Deadlift', 'Pull-ups', 'Push-ups', 'Running', 'Cycling', 'Swimming', 'Yoga', 'Weight Lifting', 'HIIT', 'Walking'];
+            const exerciseDatalist = document.getElementById('exercise-list');
+            if (exerciseDatalist && exerciseDatalist.children.length === 0) {
+                exercises.forEach(ex => {
+                    const opt = document.createElement('option');
+                    opt.value = ex;
+                    exerciseDatalist.appendChild(opt);
+                });
+            }
+
+            document.querySelectorAll('.mood-emoji').forEach(emoji => {
+                emoji.addEventListener('click', () => {
+                    document.querySelectorAll('.mood-emoji').forEach(e => e.classList.remove('selected'));
+                    emoji.classList.add('selected');
+                });
+            });
+
+            dateEl?.addEventListener('change', loadDateData);
+            document.getElementById('height')?.addEventListener('input', updateBMIDisplay);
+            document.getElementById('weight')?.addEventListener('input', updateBMIDisplay);
+            document.getElementById('habit-name')?.addEventListener('input', updateHabitStreak);
+            document.getElementById('habit-done')?.addEventListener('change', updateHabitStreak);
+            document.getElementById('save-all-btn')?.addEventListener('click', saveAllData);
+
+            updateBMIDisplay();
+        });
+
+    </script>
+</body>
+
+</html>

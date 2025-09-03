@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Price Page Insightly</title>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="price.css">
+</head>
+
+<body>
+     <header id="header">
+        <div class="container">
+            <div class="navbar" style="display: flex; align-items: center; justify-content: space-between;">
+                <a href="index.html" class="logo" style="display: flex; align-items: center; height: 56px;">
+                    <img src="image/insightblacknew.png" alt="Insightly Logo" class="logo-img" style="height: 100px; width: 200px; display: block; align-self: center;">
+                </a>
+                <ul class="nav-links" style="display: flex; align-items: center;">
+                   <li><a href="index.html" class="nav-link">HOME </a></li>
+                    <li><a href="resources" class="nav-link">RESOURCES </a></li>
+                    <li><a href="price.html" class="nav-link">PRICING</a></li>
+                    <li><a href="login.html" class="nav-link">LOGIN</a></li>
+                    <li><a href="fitnesspage.html" class="btn btn-primary nav-cta">GET STARTED</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Choose Your Plan</h2>
+            <p class="section-subtitle">Flexible pricing options to suit your needs.</p>
+
+            <div class="pricing-toggle">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="togglePricing" checked>
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Monthly</span>
+                <span class="toggle-label">Yearly</span>
+            </div>
+
+            <div class="grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Basic</h3>
+                        <div class="pricing-price" data-monthly="$0" data-yearly="$0">Free</div>
+                        <div class="pricing-period">forever</div>
+                    </div>
+                    <p class="pricing-description">Ideal for individuals just getting started with task management.</p>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">✓ Core task management</li>
+                        <li class="pricing-feature">✓ Basic analytics</li>
+                        <li class="pricing-feature">✓ 1 workspace</li>
+                        <li class="pricing-feature">✖ Advanced integrations</li>
+                        <li class="pricing-feature">✖ Priority support</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Get Started</a>
+                </div>
+
+                <div class="pricing-card popular">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Pro</h3>
+                        <div class="pricing-price" data-monthly="$9" data-yearly="$90">$9</div>
+                        <div class="pricing-period">per month</div>
+                    </div>
+                    <p class="pricing-description">Perfect for teams looking to enhance collaboration and productivity.</p>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">✓ All Basic features</li>
+                        <li class="pricing-feature">✓ Advanced analytics</li>
+                        <li class="pricing-feature">✓ 5 workspaces</li>
+                        <li class="pricing-feature">✓ Custom integrations</li>
+                        <li class="pricing-feature">✓ Priority support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Enterprise</h3>
+                        <div class="pricing-price" data-monthly="$29" data-yearly="$290">$29</div>
+                        <div class="pricing-period">per month</div>
+                    </div>
+                    <p class="pricing-description">Designed for large organizations needing advanced features and support.</p>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">✓ All Pro features</li>
+                        <li class="pricing-feature">✓ Unlimited workspaces</li>
+                        <li class="pricing-feature">✓ Dedicated account manager</li>
+                        <li class="pricing-feature">✓ On-premise options</li>
+                        <li class="pricing-feature">✓ SLA guarantees</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+
+            <div class="pricing-comparison">
+                <h3 class="comparison-title">Compare Plans</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Basic</th>
+                            <th>Pro</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Core task management</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced analytics</td>
+                            <td>✖</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Workspaces</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Custom integrations</td>
+                            <td>✖</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Priority support</td>
+                            <td>✖</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="testimonials">
+                <h3 class="testimonials-title">What Our Users Say</h3>
+                <div class="testimonial-container">
+                    <div class="testimonial-card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYTJmNGE3ZDgtZjE3NC00YjA0LThlNzQtOGRhYjEwMWEyYzg5XkEyXkFqcGc@._V1_QL75_UX291_.jpg" alt="Sir Jerry" class="top">
+                        <p class="testimonial-content">"Insightly has transformed the way our team collaborates. The Pro plan is a game changer!"</p>
+                        <div class="testimonial-author">- Sir Jerry</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://i.pinimg.com/236x/c5/36/13/c53613a6bb2df2b0fe628f93c0126384.jpg" alt="Sir Tom" class="top">
+                        <p class="testimonial-content">"The Enterprise plan has all the features we need to manage our large projects effectively."</p>
+                        <div class="testimonial-author">- Sir Tom</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta">
+                <h2 class="cta-title">Ready to Experience Advanced Productivity?</h2>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#" class="btn btn-secondary">See Case Studies</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo">INSIGHTLY</div>
+                    <p class="footer-text">The productivity platform designed for both performance and peace of mind.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Product</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="fitnesspage.html">Features</a></li>
+                        <li class="footer-link"><a href="price.html">Pricing</a></li>
+                        <li class="footer-link"><a href="fitnesspage.html">Integrations</a></li>
+                        <li class="footer-link"><a href="index.html">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">Blog</a></li>
+                        <li class="footer-link"><a href="aboutus.html">Guides</a></li>
+                        <li class="footer-link"><a href="#">Webinars</a></li>
+                        <li class="footer-link"><a href="#">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="aboutus.html">About</a></li>
+                        <li class="footer-link"><a href="aboutus.html">Careers</a></li>
+                        <li class="footer-link"><a href="aboutus.html">Press</a></li>
+                        <li class="footer-link"><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Legal</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">Privacy</a></li>
+                        <li class="footer-link"><a href="#">Terms</a></li>
+                        <li class="footer-link"><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">© 2025 Insightly. All rights reserved.</div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('togglePricing').addEventListener('change', function () {
+            const isYearly = this.checked;
+            const pricingCards = document.querySelectorAll('.pricing-card');
+
+            pricingCards.forEach(card => {
+                const priceElement = card.querySelector('.pricing-price');
+                const monthlyPrice = priceElement.getAttribute('data-monthly');
+                const yearlyPrice = priceElement.getAttribute('data-yearly');
+
+                priceElement.textContent = isYearly ? yearlyPrice : monthlyPrice;
+                priceElement.nextElementSibling.textContent = isYearly ? 'per year' : 'per month';
+            });
+        });
+    </script>
+</body>
+
+</html>
